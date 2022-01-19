@@ -1,31 +1,50 @@
-# 첫번째 시도
-def solution(prices):
-    answer = []
-    cnt = 0
-    for i in range(len(prices)):
-        # 마지막 요소 최종 입력
-        if i == len(prices) - 1:
-            answer.append(cnt)
+from itertools import count
 
-        for j in range(i+1, len(prices)):
-            
-            # 주식가격이 상승 및 유지될 때 카운트
-            if prices[i] <= prices[j]:
-                cnt += 1
-            
-            # 하락 시 카운트 및 종료
-            else:
-                cnt += 1
-                answer.append(cnt)
-                cnt = 0
-                break
-            
-            # 반복문 종료 시 카운트 추가
-            if j == len(prices)-1:
-                answer.append(cnt)
-                cnt = 0                
+
+def solution(bridge_length, weight, truck_weights):
+    answer = 0
+    wg = 0
+    cnt = 0
+    on_bridge = []
+    wg_bridge = []
+    time = []
+    bus = [number for number in range(len(truck_weights))]
+
+    # 다리 진입 가능여부
+    while True:
+        cnt += 1
+        # 다리 진입 가능여부 확인, 진입
+        if truck_weights:
+            if bridge_length >= len(on_bridge) + 1 and weight >= wg + truck_weights[0]:
+                on_bridge.append(bus[0])
+                wg += truck_weights[0]
+                wg_bridge.append(truck_weights[0])
+                del truck_weights[0]
+
+        # 모두 이동 완료 시 종료
+        elif truck_weights == 0:
+            answer = cnt
+            break
+        
+        # 시간 경과
+        for i in range(len(on_bridge)):
+            # if on_bridge[i] == bus[i]:
+            time.append(bus[i])
+
+        # 트럭 이동 완료
+        if bus:
+            if bridge_length == time.count(bus[0]):
+                for _ in range(bridge_length):
+                    time.remove(bus[0])
+                del on_bridge[0]
+                del bus[0]
+                wg -= wg_bridge[0]
+                del wg_bridge[0]
 
     return answer
 
-prices = [1, 2, 3, 1, 3, 0]
-print(solution(prices))
+
+bridge_length = 2
+weight = 10
+truck_weights = [7,4,5,6]
+solution(bridge_length, weight, truck_weights)

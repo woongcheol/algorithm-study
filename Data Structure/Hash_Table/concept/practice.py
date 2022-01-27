@@ -34,3 +34,4 @@ storage_data('strawberry', 2000)
 get_data('apple')
 get_data('banana')
 get_data('strawberry')
+

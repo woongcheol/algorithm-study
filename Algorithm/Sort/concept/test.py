@@ -60,30 +60,30 @@
 # print(squear(n))
 
 # # Quick Sort
-# import random
-# from collections import deque
+import random
+from collections import deque
 
-# def quick_sort(data):
-#     # 데이터가 1개일 경우 반환
-#     if len(data) <= 1:
-#         return list(data)
+def quick_sort(data):
+    # 데이터가 1개일 경우 반환
+    if len(data) <= 1:
+        return list(data)
 
-#     # 변수 초기화
-#     pivot = data[0]
-#     left = deque()
-#     right = deque()
+    # 변수 초기화
+    pivot = data[0]
+    left = deque()
+    right = deque()
 
-#     # 피봇 기준 데이터 정렬
-#     for idx in range(1, len(data)):
-#         if pivot > data[idx]:
-#             left.appendleft(data[idx])
-#         else:
-#             right.append(data[idx])
-#     return quick_sort(left) + [pivot] + quick_sort(right)
+    # 피봇 기준 데이터 정렬
+    for idx in range(1, len(data)):
+        if pivot > data[idx]:
+            left.appendleft(data[idx])
+        else:
+            right.append(data[idx])
+    return quick_sort(left) + [pivot] + quick_sort(right)
 
 
-# data = deque(random.sample(range(30), 10))
-# print(quick_sort(data))
+data = deque(random.sample(range(30), 10))
+print(quick_sort(data))
 
 # Quick Sort - list comprehension
 import random

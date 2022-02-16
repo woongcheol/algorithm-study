@@ -1,46 +1,47 @@
-# 배열로 union-find 구현
-
-# 부모 노드 찾기 - O(1)
 def find(x):
-
-    # 부모 노드와 자신의 값이 같다면 자신을 반환
-    if x == parent[x]:
+    if parent[x] == x:
         return x
-
-    # 부모 노드와 자신의 값이 다르다면,
     else:
-        # 해당 부모 노드를 할당한다.
         p = find(parent[x])
-
-        # 자신의 부모 노드를, 할당한 값으로 변환한다.
         parent[x] = p
-
-        # 변환된 부모 노드를 반환한다.
         return parent[x]
 
-
-# 부모노드 연결 - 일반적으로 O(N)
 def union(x, y):
-    # 부모 노드 찾기
     x = find(x)
-
-    # 부모 노드 찾기
     y = find(y)
 
-    # 부모 노드 연결하기
-    parent[y] = x
+    if x != y:
+        parent[y] = x
+        number[x] += number[y]
 
-parent = []
+# 테스트 케이스 입력
+T = int(input())
 
-for i in range(0, 5):
-    parent.append(i)
+# 반복 실행
+for _ in range(T):
+    
+    # 친구 수 입력
+    F = int(input())
+        
+    # 자료형 할당 및 초기화
+    parent = dict()
+    number = dict()
 
-# parent = [0, 1, 2, 3, 4]
+    for _ in range(F):
+        
+        # 친구 관계 입력
+        x, y = input().split(' ')
+        
+        # 네트워크 생성
+        if x not in parent:
+            parent[x] = x
+            number[x] = 1
 
-union(1, 4) # x = 1, y = 4, parent = [0, 1, 2, 3, 1]
-union(2, 4) # x = 2, y = 4, parent = [0, 2, 2, 3, 1]
+        if y not in parent:
+            parent[y] = y
+            number[y] = 1
 
-# 부모 노드 검색 및 같은 집합 찾기
-for i in range(1, len(parent)):
-    print(find(i), end=' ')
+        # 네트워크 연결
+        union(x, y)
 
+        print(number[find(x)])

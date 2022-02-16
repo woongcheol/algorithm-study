@@ -85,23 +85,23 @@ def quick_sort(data):
 data = deque(random.sample(range(30), 10))
 print(quick_sort(data))
 
-# Quick Sort - list comprehension
-import random
+# # Quick Sort - list comprehension
+# import random
 
-def quick_sort(data):
-    # 값이 1이 나오면 값 반환
-    if len(data) <= 1:
-        return data
+# def quick_sort(data):
+#     # 값이 1이 나오면 값 반환
+#     if len(data) <= 1:
+#         return data
     
-    # 변수 초기화
-    pivot = data[0]
+#     # 변수 초기화
+#     pivot = data[0]
     
-    # 분류 - list comprehension
-    left = [item for item in data[1:] if pivot > item]
-    right = [item for item in data[1:] if pivot < item]
+#     # 분류 - list comprehension
+#     left = [item for item in data[1:] if pivot > item]
+#     right = [item for item in data[1:] if pivot < item]
 
-    # recursive call
-    return quick_sort(left) + [pivot] + quick_sort(right)
+#     # recursive call
+#     return quick_sort(left) + [pivot] + quick_sort(right)
 
-data = random.sample(range(30), 10)
-print(quick_sort(data))
+# data = random.sample(range(30), 10)
+# print(quick_sort(data))

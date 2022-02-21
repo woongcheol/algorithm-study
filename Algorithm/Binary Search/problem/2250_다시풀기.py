@@ -12,8 +12,8 @@ def in_order(node, level):
     level_depth = max(level_depth, level)
     if node.left_node != -1:
         in_order(tree[node.left_node], level + 1)
-    level_min[level] = min(level_min[tree], x)
-    level_max[level] = max(level_max[tree], x)
+    level_min[level] = min(level_min[level], x)
+    level_max[level] = max(level_max[level], x)
     x += 1
     if node.right_node != -1:
         in_order(tree[node.right_node], level + 1)
@@ -47,8 +47,19 @@ for _ in range(N):
 
 # 노드 탐색 및 루트 노드 지정
 for i in range(1, N+1):
-    if tree[i].parrent == -1:
+    if tree[i].parent == -1:
         root = i
 
 # 중위 순회
 in_order(tree[root], 1)
+
+# 출력 - 너비가 가장 넓은 레벨, 그 레벨의 너비
+result_level = 1
+result_width = level_max[1] - level_min[1] + 1
+for i in range(2, level_depth + 1):
+    width = level_max[i] - level_min[i] + 1
+    if result_width < width:
+        result_level = i
+        result_width = width
+
+print(result_level, result_width)

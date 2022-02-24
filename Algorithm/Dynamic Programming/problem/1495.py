@@ -3,7 +3,6 @@ def play_vol(N, S, M):
     dp = [[False] * (M + 1) for _ in range(N+1)]
     dp[0][S] = True
     
-
     for i in range(N):
         for j in range(M+1):
             if not dp[i][j]:
@@ -23,3 +22,4 @@ def play_vol(N, S, M):
 
 N, S, M = map(int, input().split())
 play_vol(N, S, M)
+

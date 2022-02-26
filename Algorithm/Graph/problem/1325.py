@@ -9,7 +9,7 @@ def bfs(n):
         now = q.popleft()
         for e in adj[now]:
             if not visited[e]:
-                cnt += 1
+                count += 1
                 visited[e] = True
                 q.append(e)
 

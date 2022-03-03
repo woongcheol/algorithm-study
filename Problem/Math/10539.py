@@ -21,3 +21,14 @@ for i in range(1, n):
 
 for num in a_lst:
     print(num, end=' ')
+
+# 강의 풀이 2
+n, b_lst = int(input()), list(map(int, input().split()))
+a_lst = [0 for i in range(n)]
+a_lst[0] = b_lst[0]
+
+for i in range(1, n):
+    a_lst[i] = b_lst[i]*(i+1) - sum(a_lst)
+
+for num in a_lst:
+    print(num, end=' ')

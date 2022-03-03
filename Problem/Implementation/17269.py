@@ -1,3 +1,4 @@
+# 개인 풀이
 from collections import deque
 
 N, M = map(int, input().split())
@@ -49,3 +50,29 @@ for idx, num in enumerate(name_comb):
         continue
     print(num, end='')
 print('%')
+
+# 강의 풀이
+N, M = map(int, input().split())
+name_a, name_b = input().split()
+
+# 알파벳 획수 리스트 생성 - ord 조합
+alp = [3, 2, 1, 2, 4, 3, 1, 3, 1, 1, 3, 1,
+       3, 2, 1, 2, 2, 2, 1, 2, 1, 1, 1, 2, 2, 1]
+
+# 문자 조합
+name_comb = ''
+min_len = min(N, M)
+for i in range(min_len):
+    name_comb += name_a[i] + name_b[i]
+
+name_comb += name_a[min_len:] + name_b[min_len:]
+
+# 숫자 변환
+lst = [alp[ord(i)-ord('A')] for i in name_comb]
+
+# 숫자 더하기
+for i in range(N+M-2):
+    for j in range(N+M-1-i):
+        lst[j] += lst[j+1]
+
+print("{}%".format(lst[0] % 10*10 + lst[1] % 10))

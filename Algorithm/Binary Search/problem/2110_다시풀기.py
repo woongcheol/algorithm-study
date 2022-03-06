@@ -1,3 +1,4 @@
+# 1차 시도
 def wifi_max(N, C):
     # 좌표 리스트 생성
     house = list()
@@ -35,3 +36,44 @@ def wifi_max(N, C):
 
 N, C = map(int, input().split())
 wifi_max(N, C)
+
+# 2차 시도
+from sys import stdin
+INPUT = stdin.readline
+
+# 이분 탐색
+def binary_search(position, start, end):
+    if start > end:
+        return
+    
+    global answer
+    cnt = 1
+    current = position[0]
+    mid = (start + end) // 2
+
+    for i in range(1, len(position)):
+        if position[i] >= current + mid:
+            current = position[i]
+            cnt += 1
+
+    if cnt >= C:
+        answer = mid
+        binary_search(position, mid+1, end)
+    else:
+        binary_search(position, start, mid-1)
+
+
+# 데이터 입력
+N, C = map(int, INPUT().split())
+position = list()
+for i in range(N):
+    position.append(int(INPUT()))
+position.sort()
+
+# 최소거리 및 최대거리
+start = 1
+end = position[-1] - position[0]
+answer = 0
+
+binary_search(position, start, end)
+print(answer)

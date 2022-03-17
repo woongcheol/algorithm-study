@@ -11,91 +11,138 @@ def game(start_board, dir, ans):
         for j in range(N):
             # 상으로 이동
             if dir == 'top':
-                if i == N-1:
-                    break
-                
                 print('top')
                 for k in range(i+1, N):
-                    # 이동 시키기
-                    if board[i][j] == 0 and board[k][j]:
-                        board[i][j] = board[k][j]
-                        board[k][j] = 0
-                    
-                    # 이동 및 더하기
-                    if board[i][j] == board[k][j]:
-                        board[i][j] += board[k][j]
-                        board[k][j] = 0
+                    # 이동
+                    if board[k][j]:
+                        if board[i][j] == 0:
+                            board[i][j] = board[k][j]
+                            board[k][j] = 0
+
+                        elif board[i][j] == board[k][j]:
+                            board[i][j] += board[k][j]
+                            board[k][j] = 0
+                            break
+                        else:
+                            break
+
+                        # 더하기
+                        for l in range(k+1, N):
+                            if board[l][j] == 0:
+                                continue
+                            elif board[l][j] != board[i][j]:
+                                break
+                            if board[i][j] == board[l][j]:
+                                board[i][j] += board[l][j]
+                                board[l][j] = 0
+                                break
+                        break
                                     
                     ans = max(ans, board[i][j])
-                    break
                 print(board)
                 print()
 
             # 하로 이동
             if dir == 'down':
-                if i == N-1:
-                    break
                 print('down')
                 for k in range(N-2-i, -1, -1):
 
-                    # 이동 시키기
-                    if board[N-1-i][j] == 0 and board[k][j]:
-                        board[N-1-i][j] = board[k][j]
-                        board[k][j] = 0
-                    
-                    # 이동 및 더하기
-                    if board[N-1-i][j] == board[k][j]:
-                        board[N-1-i][j] += board[k][j]
-                        board[k][j] = 0
+                    # 이동
+                    if board[k][j]:
+                        if board[N-1-i][j] == 0:
+                            board[N-1-i][j] = board[k][j]
+                            board[k][j] = 0
+
+                        elif board[N-1-i][j] == board[k][j]:
+                            board[N-1-i][j] += board[k][j]
+                            board[k][j] = 0
+                            break
+                        else:
+                            break                    
+
+                        # 더하기
+                        for l in range(k-1, -1, -1):
+                            if board[l][j] == 0:
+                                continue
+                            elif board[l][j] != board[N-1-i][j]:
+                                break
+                            if board[N-1-i][j] == board[l][j]:
+                                board[N-1-i][j] += board[l][j]
+                                board[l][j] = 0
+                                break
+                        break
                                     
                     ans = max(ans, board[N-1-i][j])
-                    break
                 print(board)
                 print()
 
             # 우로 이동
             if dir == 'right':
-                if j == N-1:
-                    break
                 print('right')
                 for k in range(N-2-j, -1, -1):
+                    
+                    # 이동
+                    if board[i][k]:
+                        if board[i][N-1-j] == 0:
+                            board[i][N-1-j] = board[i][k]
+                            board[i][k] = 0
 
-                    # 이동 시키기
-                    if board[i][N-1-j] == 0 and board[i][k]:
-                        board[i][N-1-j] = board[i][k]
-                        board[i][k] = 0
+                        elif board[i][N-1-j] == board[i][k]:
+                            board[i][N-1-j] += board[i][k]
+                            board[i][k] = 0
+                            break
+                        else:
+                            break
                     
                     # 이동 및 더하기
-                    if board[i][N-1-j] == board[i][k]:
-                        board[i][N-1-j] += board[i][k]
-                        board[i][k] = 0
+                        for l in range(k-1, -1, -1):
+                            if board[i][l] == 0:
+                                continue
+                            elif board[i][l] != board[i][N-1-j]:
+                                break
+                            if board[i][N-1-j] == board[i][l]:
+                                board[i][N-1-j] += board[i][l]
+                                board[i][l] = 0
+                                break
+                        break
                                     
                     ans = max(ans, board[i][N-1-j])
-                    break
                 print(board)
                 print()
             
             # 좌로 이동
             if dir == 'left':
-                if j == N-1:
-                    break
                 print('left')
                 for k in range(j+1, N):
 
-                    # 이동 시키기
-                    if board[i][j] == 0 and board[i][k]:
-                        board[i][j] = board[i][k]
-                        board[i][k] = 0
+                    # 이동
+                    if board[i][k]:
+                        if board[i][j] == 0:
+                            board[i][j] = board[i][k]
+                            board[i][k] = 0
+                        elif board[i][j] == board[i][k]:
+                            board[i][j] += board[i][k]
+                            board[i][k] = 0
+                            break
+                        else:
+                            break
                     
-                    # 이동 및 더하기
-                    if board[i][j] == board[i][k]:
-                        board[i][j] += board[i][k]
-                        board[i][k] = 0
-                                    
+                        # 이동 및 더하기
+                        for l in range(k+1, N):
+                            if board[i][l] == 0:
+                                continue
+                            elif board[i][l] != board[i][j]:
+                                break
+                            if board[i][j] == board[i][l]:
+                                board[i][j] += board[i][l]
+                                board[i][l] = 0
+                                break
+                        break
+                                           
                     ans = max(ans, board[i][j])
-                    break
                 print(board)
                 print()
+
 
     now_board = copy.deepcopy(board)
     return now_board, ans
@@ -110,29 +157,27 @@ def max_sum(board):
 
     # BFS
     while game_lst:
-
         # 최댓값 계산
         board, cnt, ans = game_lst.popleft()
-        start_board = copy.deepcopy(board)
-
+        
         # 블록 이동
         if cnt != 0:
-            direction = ['top', 'down', 'right', 'left']
             cnt -= 1
+            start_board = copy.deepcopy(board)
+            direction = ['top', 'down', 'right', 'left']
             for dir in direction:
                 now_board, ans = game(start_board, dir, ans)
                 game_lst.append((now_board, cnt, ans))
 
         result = max(result, ans)
     
-    print(ans)
+    print(result)
 
 # 보드 크기
 N = int(input())
 
 # 게임판 초기 상태
 board = [list(map(int, input().split())) for _ in range(N)]
-ck = [[False] * N for _ in range(N)]
 
 if len(board) == 1:
     print(board[0][0])

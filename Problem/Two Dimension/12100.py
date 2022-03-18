@@ -195,7 +195,7 @@ def rotate90(B, N):
     NB = deepcopy(B)
     for i in range(N):
         for j in range(N):
-            NB[j][N-i-1] = B[i][j]
+            NB[i][j] = B[j][N-i-1]
     return NB
 
 def convert(lst, N):

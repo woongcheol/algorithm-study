@@ -11,6 +11,8 @@ def fibonacci(num):
         return
     
     for idx in range(2, num+1):
+        if zero_one[idx][0] != 0:
+            continue
         zero_one[idx][0] = zero_one[idx-1][0] + zero_one[idx-2][0]
         zero_one[idx][1] = zero_one[idx-1][1] + zero_one[idx-2][1]
 

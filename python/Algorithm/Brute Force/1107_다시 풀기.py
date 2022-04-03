@@ -77,19 +77,19 @@ input = stdin.readline
 
 N, M = int(input()), int(input())
 if M:
-    broken = set(input().split())
+    error_num = list(map(int, input().split()))
 else:
-    broken = set()
+    error_num = list()
 
 ans = abs(N - 100)
 
-for num in range(1000001):  
-    if len(str(num)) > len(str(N)):
+for num in range(1000001):
+    if len(str(num)) > len(str(N))+1:
         break
-    
+
     ck = True
     for ck_num in str(num):
-        if ck_num in broken:
+        if int(ck_num) in error_num:
             ck = False
             break
     if ck:

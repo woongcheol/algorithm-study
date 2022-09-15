@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51d41cc4-f472-4592-8b95-1bb63f42f957" name="Changes" comment="add problem">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kotlin/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kotlin/out/production/kotlin/META-INF/kotlin.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin/out/production/kotlin/META-INF/kotlin.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kotlin/out/production/kotlin/_1000Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin/out/production/kotlin/_1000Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kotlin/out/production/kotlin/_1001Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin/out/production/kotlin/_1001Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kotlin/out/production/kotlin/_1008Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin/out/production/kotlin/_1008Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kotlin/out/production/kotlin/_1152Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin/out/production/kotlin/_1152Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kotlin/out/production/kotlin/_1157Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin/out/production/kotlin/_1157Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kotlin/src/main/kotlin/1000.kt" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin/src/main/kotlin/1000.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kotlin/src/main/kotlin/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin/src/main/kotlin/input.txt" afterDir="false" />
-    </list>
+    <list default="true" id="51d41cc4-f472-4592-8b95-1bb63f42f957" name="Changes" comment="add problem" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1cfeb8c2-6b92-4c60-b400-962e58a7c294" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kotlin/META-INF/kotlin.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kotlin/META-INF/kotlin.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kotlin/_1000Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kotlin/_1000Kt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kotlin/_1001Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kotlin/_1001Kt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kotlin/_1008Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kotlin/_1008Kt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kotlin/_1152Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kotlin/_1152Kt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kotlin/_1157Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kotlin/_1157Kt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/1000.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/1000.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/input.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EmYAW3FQ4ILPX9xqWmEydEfPxn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/iCubeOn/IdeaProjects/Algorithm-study",
+    "settings.editor.selected.configurable": "preferences.language.Kotlin"
+  }
+}]]></component>
+  <component name="RunManager" selected="Kotlin.Main.kt">
+    <configuration name="Main.kt" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="kotlin" />
+      <option name="REDIRECT_INPUT" value="true" />
+      <option name="INPUT_FILE" value="$PROJECT_DIR$/src/main/kotlin/input.txt" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_1000Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1000Kt" />
+      <module name="kotlin" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Kotlin.Main.kt" />
+      <item itemvalue="Kotlin._1000Kt" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin._1000Kt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1cfeb8c2-6b92-4c60-b400-962e58a7c294" name="Changes" comment="" />
+      <created>1663202083467</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663202083467</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

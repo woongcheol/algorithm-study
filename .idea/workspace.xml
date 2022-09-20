@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51d41cc4-f472-4592-8b95-1bb63f42f957" name="Changes" comment="add problem">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Algorithm-study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Algorithm-study.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kotlin/src/main/kotlin/1152.kt" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin/src/main/kotlin/1152.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +14,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Worksheet" />
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -41,9 +38,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunManager" selected="Kotlin._1008Kt">
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="Kotlin.main">
+    <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="Algorithm-study" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="_1008Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1008Kt" />
+      <module name="Algorithm-study" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_1152Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1152Kt" />
       <module name="Algorithm-study" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -52,12 +69,33 @@
     <configuration name="_1546Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1546Kt" />
       <module name="Algorithm-study" />
+      <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main" type="JetRunConfigurationType" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="Algorithm-study" />
+      <option name="REDIRECT_INPUT" value="true" />
+      <option name="INPUT_FILE" value="$PROJECT_DIR$/kotlin/src/main/kotlin/input.txt" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Kotlin._1008Kt" />
+      <item itemvalue="Kotlin._1546Kt" />
+      <item itemvalue="Kotlin.main" />
+      <item itemvalue="Kotlin.MainKt (1)" />
+      <item itemvalue="Kotlin._1152Kt" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.main" />
+        <item itemvalue="Kotlin._1152Kt" />
+        <item itemvalue="Kotlin.MainKt (1)" />
         <item itemvalue="Kotlin._1008Kt" />
         <item itemvalue="Kotlin._1546Kt" />
       </list>

@@ -13,5 +13,6 @@ int main(void) {
     for (int i = 0; i < n; i++) {
         sum += arr[i] - '0';
     }
+    // 1112kb, 0ms
     printf("%d", sum);
 }

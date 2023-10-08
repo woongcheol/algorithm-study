@@ -1,2 +1,2 @@
-nsData) => {
-  // 데이터 분리
+
+const solved = (tran

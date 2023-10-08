@@ -1,2 +1,2 @@
 
-const solved = (tran
+  .trim();

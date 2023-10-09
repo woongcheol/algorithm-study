@@ -13,32 +13,29 @@ const transData = inputData.split(" ").map(Number);
 // 알고리즘 적용
 const solved = (transData) => {
   const firstNum = transData[0];
-  let result;
+  let result = "mixed";
 
   // ascending or mixed
   if (firstNum == 1) {
     for (let i = 0; i < 8; i++) {
-      if (transData[i] == i + 1) {
-        result = "ascending";
-      } else {
+      if (transData[i] !== i + 1) {
         result = "mixed";
         break;
       }
+      result = "ascending";
     }
+
     // descending or mixed
   } else if (firstNum == 8) {
     for (let i = 0; i < 8; i++) {
-      if (transData[i] == 8 - i) {
-        result = "descending";
-      } else {
+      if (transData[i] !== 8 - i) {
         result = "mixed";
         break;
       }
+      result = "descending";
     }
-    // mixed
-  } else {
-    result = "mixed";
   }
+
   console.log(result);
 };
 

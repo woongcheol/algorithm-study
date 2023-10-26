@@ -1,2 +1,2 @@
- 불러오기
-    freopen("10
+    // printf("%d\n", kPack);
+    // printf("%d\n", nkPack);

@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /*
 복기
 1. 제한 사항
@@ -13,6 +11,8 @@
       int result = factN/(factK*factNK);
 */
 
+#include <stdio.h>
+
 int main(void) {
 
     int N=0, K=0;
@@ -24,24 +24,25 @@ int main(void) {
     scanf("%d%d", &N, &K);
 
     // 3. 이항 계수
-    int factN = 1, factK = 1, factNK = 1;
+    int result = factorial(N) / (factorial(K) * factorial(N - K));
 
-    for (int i = 2; i <= N; i++) {
-        factN *= i;
-    }
-
-    for (int j = 2; j <= K; j++) {
-        factK *= j;
-    }
-
-    for (int k = 2; k <= N - K; k++) {
-        factNK *= k;
-    }
-
-    int result = factN/(factK*factNK);
-
-    // 3. 데이터 출력
+    // 4. 데이터 출력
     printf("%d", result);
 
     return 0;
+}
+
+// 팩토리얼 계산 함수
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+
+    int result = 1;
+    
+    for (int i = 2; i <= n; i++) {
+        result *= i;
+    }
+
+    return result;
 }

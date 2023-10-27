@@ -4,26 +4,26 @@ function quicksort(q) {
   }
 
   const pivot = q[0];
+  const less = [];
+  const greater = [];
 
-  const less = new Array();
   for (let i = 1; i < q.length; i++) {
     if (q[i] < pivot) {
       less.push(q[i]);
-    }
-  }
-
-  const greater = new Array();
-  for (let i = 1; i < q.length; i++) {
-    if (q[i] >= pivot) {
+    } else {
       greater.push(q[i]);
     }
   }
 
-  const qResult = quicksort(less) + [pivot] + quicksort(greater);
+  // 문자열로 변환할 때
+  // const qResult = quicksort(less) + [pivot] + quicksort(greater);
+
+  // 배열로 생성
+  const qResult = quicksort(less).concat([pivot], quicksort(greater));
 
   return qResult;
 }
 
-const myArray = [5, 2, 9, 3, 6, 1];
+const myArray = [9, 5, 2, 9, 3, 6, 3, 1];
 const sortedArray = quicksort(myArray);
 console.log(sortedArray);

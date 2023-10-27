@@ -1,2 +1,2 @@
-    // printf("%d\n", kPack);
-    // printf("%d\n", nkPack);
+                        printf("%s, ", tempWord[cnt-1]);
+                        printf("%s\n", arr[j] );

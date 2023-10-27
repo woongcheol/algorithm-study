@@ -20,5 +20,9 @@
     "string.h": "c",
     "__locale": "c",
     "cstring": "c"
-  }
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "python.formatting.provider": "none"
 }

@@ -19,7 +19,8 @@
     "stdlib.h": "c",
     "string.h": "c",
     "__locale": "c",
-    "cstring": "c"
+    "cstring": "c",
+    "cstdlib": "c"
   },
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
